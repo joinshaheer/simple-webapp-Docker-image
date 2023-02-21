@@ -1,0 +1,56 @@
+Install Docker:
+
+01. Open a terminal and type:
+
+$ sudo apt-get update
+$ sudo apt-get install docker.io
+
+02. Start Docker:
+
+$ sudo systemctl start docker
+$ sudo systemctl enable docker
+
+03. Create a Dockerfile:
+Create a new directory where you want to build your image:
+
+$ mkdir my-docker-image
+$ cd my-docker-image
+
+04. Create a new file named Dockerfile in the directory:
+
+nano Dockerfile
+or 
+vi Dockerfile
+
+05. In the Dockerfile, specify the base image, copy files or install dependencies, and set the default command:
+
+FROM ubuntu:latest
+RUN apt-get update && apt-get install -y python3
+COPY . /app
+WORKDIR /app
+CMD ["python3", "app.py"]
+
+Note: This example installs Python3 and sets the default command to run the app.py file.
+
+
+06. Build the Docker image:
+
+Run the following command to build the Docker image:
+
+$ docker build -t my-docker-image .
+
+Note: my-docker-image is the name you choose for the image, and the period . 
+specifies the current directory as the build context.
+
+07. Verify the Docker image:
+Run the following command to see a list of your Docker images:
+
+$ docker images
+
+Verify that your image was successfully built and is listed.
+Congratulations, you have now created a Docker image in Ubuntu!
+
+
+
+
+
