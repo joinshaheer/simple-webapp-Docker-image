@@ -35,9 +35,9 @@ cd my-website
 02. Create a new file named app.py in the directory:
 
 
-nano app.py
+$ nano app.py
 or 
-vi app.py 
+$ vi app.py 
 
 
 03. Paste the following code in the app.py file:
@@ -53,16 +53,18 @@ def hello():
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=8080)
-   
+
+
+
 Note: This code creates a simple Flask application that listens on port 8080 and returns a "Hello, World!" message when the root URL is requested.
 
 
 04. Create a new file named Dockerfile in the directory:
 
 
-nano Dockerfile
+$ nano Dockerfile
 or 
-vi Dockerfile
+$ vi Dockerfile
 
 Paste the following code in the Dockerfile:
 
@@ -87,7 +89,7 @@ The container's port 8080 is exposed, and the ENTRYPOINT runs the app.py file wh
 05. Build the Docker image:
 
 
-docker build -t my-website .
+$ docker build -t my-website .
 
 Note: my-website is the name you choose for the image.
 
@@ -95,7 +97,7 @@ Note: my-website is the name you choose for the image.
 07. Run the Docker container:
 
 
-docker run --name my-container -p 8080:8080 my-website
+$ docker run --name my-container -p 8080:8080 my-website
 
 Note: my-container is the name you choose for the container.
 
