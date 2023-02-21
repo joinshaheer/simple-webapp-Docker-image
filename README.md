@@ -21,6 +21,9 @@ Usage
 The web application is a simple Flask app that displays a "Hello, World!" message on the home page. 
 You can modify the app.py file to change the content of the message or add additional functionality to the app.
 
+![Screenshot_10](https://user-images.githubusercontent.com/99193402/220286133-e48729de-46db-43f2-aa33-df010cfa8571.png)
+
+
 
 01. Create a new directory:
 
