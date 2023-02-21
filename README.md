@@ -12,7 +12,7 @@ Once you have Docker installed, you can run the following command in the root di
 This will build the Docker image using the Dockerfile in the repository, and tag it with the name my-website.
 You can then run the Docker container using the following command:
 
-docker run --name my-container -p 8080:8080 my-website
+$ docker run --name my-container -p 8080:8080 my-website
 
 This will start the Docker container and expose port 8080,
 which you can use to access the web application in your web browser at http://localhost:8080.
