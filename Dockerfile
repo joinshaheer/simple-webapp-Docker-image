@@ -1,5 +1,11 @@
-FROM ubuntu:latest
-RUN apt-get update && apt-get install -y python3
-COPY . /app
-WORKDIR /app
-CMD ["python3", "app.py"]
+FROM python:3.6-alpine
+
+RUN pip install flask
+
+COPY . /opt/
+
+EXPOSE 8080
+
+WORKDIR /opt
+
+ENTRYPOINT ["python", "app.py"]
