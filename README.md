@@ -102,4 +102,11 @@ Note: my-container is the name you choose for the container.
 
 That's it! You have now built and run a simple website using Docker and Flask on Ubuntu.
 
+WEBSITE RUNNING ON LOCAL HOST.
+![Screenshot_10](https://user-images.githubusercontent.com/99193402/220285732-dc5fc0df-ef2d-4570-98c1-32e0197809b3.png)
+
+CONTAINER RUNNING ON UBUNTU:
+
+![Screenshot_11](https://user-images.githubusercontent.com/99193402/220286004-3fb416ed-b93e-4622-b08c-f24ea674ad95.png)
+
 
